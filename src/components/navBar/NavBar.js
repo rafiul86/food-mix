@@ -34,6 +34,7 @@ const NavBar = () => {
 </div>
       </div>
     </div>
+    <h1 className="mt-3 mb-5">Shots | <span style={{fontSize : 'x-large' ,color :'grey'}}>200 Recipes</span></h1>
       <div className="row">
       {
         meals.map(meal=><Meals meal={meal}></Meals>)
