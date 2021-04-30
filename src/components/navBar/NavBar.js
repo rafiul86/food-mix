@@ -20,22 +20,15 @@ const NavBar = () => {
     <div>
       <div className="row">
       <div className="col-md-9 col-sm-12">
-        <input onChange={handleSearch} placeholder="Search Your Favorite" className="input-design"/>
+      <form class="navbar-form navbar-left">
+  <input type="text" onChange={handleSearch} className="form-control col-lg-12" placeholder="Search"/>
+</form>
+        {/* <input  placeholder="Search Your Favorite" className="input-design"/> */}
       </div>
-      <div className="col-md-3 col-sm-12">
-      <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-      </div>
+      
     </div>
     <h1 className="mt-3 mb-5">Shots | <span style={{fontSize : 'x-large' ,color :'grey'}}>200 Recipes</span></h1>
-      <div className="row">
+      <div className="row ms-2">
       {
         meals.map(meal=><Meals meal={meal}></Meals>)
       }

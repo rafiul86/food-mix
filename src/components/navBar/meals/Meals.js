@@ -13,11 +13,11 @@ const Meals = ({meal}) => {
   <Card.Img variant="top" src={strMealThumb} />
   <Card.Body>
     <Card.Title>{strMeal}</Card.Title>
-    <FontAwesomeIcon style={{color : 'gold'}} icon={faStar} />
-    <FontAwesomeIcon style={{color : 'gold'}} icon={faStar} />
-    <FontAwesomeIcon style={{color : 'gold'}} icon={faStar} />
-    <FontAwesomeIcon style={{color : 'gold'}} icon={faStar} />
-    <FontAwesomeIcon style={{color : 'gold'}} icon={faStar} />
+    <FontAwesomeIcon style={{color : 'goldenrod'}} icon={faStar} />
+    <FontAwesomeIcon style={{color : 'goldenrod'}} icon={faStar} />
+    <FontAwesomeIcon style={{color : 'goldenrod'}} icon={faStar} />
+    <FontAwesomeIcon style={{color : 'goldenrod'}} icon={faStar} />
+    <FontAwesomeIcon style={{color : 'goldenrod'}} icon={faStar} />
   </Card.Body>
 </Card>
         </div>
