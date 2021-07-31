@@ -5,11 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBlender, faFingerprint, faHamburger, faShoppingBasket, faSortAmountDown, faStar } from '@fortawesome/free-solid-svg-icons'
 const DropBar = () => {
     return (
-        <div className="row mt-4 ">
-      <div className="d-flex col-md-6"> 
-          <Grid container spacing={6}>
+        <div className="row mt-4">
+      <div className=" col-md-8"> 
+          <Grid style={{marginLeft : '5px'}} container spacing={12}>
           <Grid item xs={4} lg={2}>
-          <Dropdown style={{margin : '10px'}}>
+          <Dropdown >
   <Dropdown.Toggle variant="light" id="dropdown-basic">
   <FontAwesomeIcon style={{color : 'black'}} icon={faHamburger} />
   {' '}
@@ -23,8 +23,8 @@ const DropBar = () => {
   </Dropdown.Menu>
 </Dropdown>
           </Grid>
-          <Grid item xs={4} lg={2}>
-<Dropdown style={{margin : '10px'}}>
+          <Grid style={{marginLeft : '5px'}} item xs={4} lg={2}>
+<Dropdown >
   <Dropdown.Toggle variant="light" id="dropdown-basic">
   <FontAwesomeIcon style={{color : 'black'}} icon={faShoppingBasket} />
   {' '}
@@ -39,7 +39,7 @@ const DropBar = () => {
 </Dropdown>
 </Grid>
 <Grid item xs={4} lg={2}>
-<Dropdown style={{margin : '10px'}}>
+<Dropdown >
   <Dropdown.Toggle variant="light" id="dropdown-basic">
   <FontAwesomeIcon style={{color : 'black'}} icon={faBlender} />
   {' '}
@@ -54,7 +54,7 @@ const DropBar = () => {
 </Dropdown>
 </Grid>
 <Grid item xs={4} lg={2}>
-<Dropdown style={{margin : '10px'}}>
+<Dropdown >
   <Dropdown.Toggle variant="light" id="dropdown-basic">
   <FontAwesomeIcon style={{color : 'black'}} icon={faSortAmountDown} />
   {' '}
@@ -69,7 +69,7 @@ const DropBar = () => {
 </Dropdown>
 </Grid>
 <Grid item xs={4} lg={2}>
-<Dropdown style={{margin : '10px'}}>
+<Dropdown >
   <Dropdown.Toggle variant="light" id="dropdown-basic">
   <FontAwesomeIcon style={{color : 'black'}} icon={faFingerprint} />
   {' '}
@@ -83,11 +83,11 @@ const DropBar = () => {
   </Dropdown.Menu>
 </Dropdown>
 </Grid>
-          </Grid>
+ </Grid>
       </div>
 
-       <div className="d-flex flex-row-reverse col-md-6"> 
-        <Dropdown style={{margin : '10px' }} >
+       <div className=" flex-row-reverse col-md-4"> 
+        <Dropdown>
   <Dropdown.Toggle variant="light" id="dropdown-basic">
     Recommended
   </Dropdown.Toggle>

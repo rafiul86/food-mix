@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="App">
       <AppBar/>
-      <DropBar/>
-      <NavBar/>
+      <NavBar/>    
       <h1 className="mt-3 mb-5">Sub-Category Title | <span style={{fontSize : 'x-large' ,color :'grey'}}>200 Recipes</span></h1>
       <Foods/>
     </div>

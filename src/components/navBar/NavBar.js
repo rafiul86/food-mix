@@ -1,5 +1,6 @@
 import { Divider } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
+import DropBar from '../foods/food/dropBar/DropBar';
 import Meals from './meals/Meals';
 import './navBar.css'
 
@@ -21,9 +22,10 @@ const NavBar = () => {
       <div className="row">
       <div className="col-md-9 col-sm-12">
       <form class="navbar-form navbar-left">
-  <input type="text" onChange={handleSearch} className="form-control col-lg-12" placeholder="Search"/>
+  <input type="text" onChange={handleSearch} className="form-control col-lg-12 mt-3" placeholder="Search"/>
 </form>
         {/* <input  placeholder="Search Your Favorite" className="input-design"/> */}
+        <DropBar/>
       </div>
       
     </div>
